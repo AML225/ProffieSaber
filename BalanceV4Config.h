@@ -22,7 +22,7 @@ Preset presets[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
-	"cyan"},
+	"cyan"}
 };
 
 Preset presets2[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
@@ -32,6 +32,7 @@ Preset presets2[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
 	StylePtr<InOutHelper<CYAN, 300, 800, Pulsing<YELLOW, BLACK, 800>>>(),	//Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
+   "cyan"}
 };
 
 BladeConfig blades[] = {
@@ -49,7 +50,7 @@ CONFIGARRAY(presets) },
 	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1> >(),						//Crystal Chamber 		(n=2)
 	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin4, -1, -1, -1>0, 					//Red Contol Box 		(n=1)
 	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin5, -1, -1, -1>0, 					//Green Control Box LED		(n=1)
-CONFIGARRAY(presets2) },
+CONFIGARRAY(presets2) }
 };
 #endif
 
