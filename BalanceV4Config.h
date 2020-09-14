@@ -1,6 +1,6 @@
 #ifdef CONFIG_TOP
 #include "proffieboard_v2_config.h"
-#define NUM_BLADES 5
+#define NUM_BLADES 4
 #define NUM_BUTTONS 2
 #define VOLUME 1000
 const unsigned int maxLedsPerStrip = 269;
