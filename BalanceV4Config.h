@@ -20,7 +20,7 @@ Preset presets[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//KR Pixel Stick
 	StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//Crystal Chamber
-	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>>(),	//Red Control Box LED
+	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 	"cyan"},
 };
@@ -30,7 +30,7 @@ Preset presets2[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
     	StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//KR Pixel Stick
 	StylePtr<InOutHelper<CYAN, 300, 800, Pulsing<YELLOW, BLACK, 800>>>(),	//Crystal Chamber
-	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>>(),	//Red Control Box LED
+	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 };
 
