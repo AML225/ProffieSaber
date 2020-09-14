@@ -10,7 +10,7 @@ const unsigned int maxLedsPerStrip = 269;
 #define ENABLE_WS2811
 #define ENABLE_SD
 #define SHARED_POWER_PINS
-#define BLADE_DETECT_PIN Blade3Pin
+#define BLADE_DETECT_PIN 17 //Blade3Pin
 #define IDLE_OFF_TIME 60 * 10 * 1000
 #endif
 
@@ -28,6 +28,7 @@ Preset presets[] = {								//When Emitter is Attached (Yes Blade, No CC)
 Preset presets2[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
    { "TeensySF", "tracks/venus.wav",
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
+    	StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//KR Pixel Stick
 	StylePtr<InOutHelper<CYAN, 300, 800, Pulsing<YELLOW, BLACK, 800>>(),	//Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>(),	//Green Control Box LED
