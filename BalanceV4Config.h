@@ -37,19 +37,19 @@ Preset presets2[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
 
 BladeConfig blades[] = {
  { 0, 
-	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(), 	//SCW PCB NPXL			(n=5)
+	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL			(n=5)
     	SubBlade(5, 268, NULL),												//KR Pixel Stick		(n=264)
-	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1> >(),						//Crystal Chamber 		(n=2)
-	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin4, -1, -1, -1>0, 					//Red Contol Box 		(n=1)
-	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin5, -1, -1, -1>0, 					//Green Control Box LED		(n=1)
+	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 		(n=2)
+	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 					//Red Contol Box 		(n=1)
+	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 					//Green Control Box LED		(n=1)
 CONFIGARRAY(presets) },
 
  { NO_BLADE, 
-	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(), 	//SCW PCB NPXL			(n=5)
+	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL			(n=5)
     	SubBlade(5, 268, NULL),												//KR Pixel Stick		(n=264)
-	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1> >(),						//Crystal Chamber 		(n=2)
-	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin4, -1, -1, -1>0, 					//Red Contol Box 		(n=1)
-	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin5, -1, -1, -1>0, 					//Green Control Box LED		(n=1)
+	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 		(n=2)
+	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 					//Red Contol Box 		(n=1)
+	SimpleBladePtr<CreeXPE2White, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 					//Green Control Box LED		(n=1)
 CONFIGARRAY(presets2) }
 };
 #endif
