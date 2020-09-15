@@ -15,7 +15,7 @@ const unsigned int maxLedsPerStrip = 269;
 #endif
 
 #ifdef CONFIG_PRESETS
-Preset presets[] = {								//When Emitter is Attached (Yes Blade, No CC)
+Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
    { "TeensySF", "tracks/venus.wav",
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//KR Pixel Stick
@@ -25,7 +25,7 @@ Preset presets[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	"cyan"}
 };
 
-Preset presets2[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
+Preset chassis[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
    { "TeensySF", "tracks/venus.wav",
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
     	StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//KR Pixel Stick
@@ -37,20 +37,20 @@ Preset presets2[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
 
 BladeConfig blades[] = {
  { 0, 
-	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL			(n=5)
-    	SubBlade(5, 268, NULL),												//KR Pixel Stick		(n=264)
-	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 		(n=2)
-	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 					//Red Contol Box 		(n=1)
-	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 					//Green Control Box LED		(n=1)
-CONFIGARRAY(presets) },
+	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL		(n=5)
+    	SubBlade(5, 268, NULL),												//KR Pixel Stick	(n=264)
+	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
+	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
+	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
+CONFIGARRAY(blade) },
 
  { NO_BLADE, 
-	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL			(n=5)
-    	SubBlade(5, 268, NULL),												//KR Pixel Stick		(n=264)
-	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 		(n=2)
-	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 					//Red Contol Box 		(n=1)
-	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 					//Green Control Box LED		(n=1)
-CONFIGARRAY(presets2) }
+	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL		(n=5)
+    	SubBlade(5, 268, NULL),												//KR Pixel Stick	(n=264)
+	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
+	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
+	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
+CONFIGARRAY(chassis) }
 };
 #endif
 
