@@ -1,6 +1,6 @@
 #ifdef CONFIG_TOP
 #include "proffieboard_v2_config.h"
-#define NUM_BLADES 5
+#define NUM_BLADES 6
 #define NUM_BUTTONS 2
 #define VOLUME 1000
 const unsigned int maxLedsPerStrip = 269;
@@ -9,6 +9,7 @@ const unsigned int maxLedsPerStrip = 269;
 #define ENABLE_MOTION
 #define ENABLE_WS2811
 #define ENABLE_SD
+#define ENABLE_SERIAL
 #define SHARED_POWER_PINS
 #define BLADE_DETECT_PIN 17 //Blade3Pin
 #define IDLE_OFF_TIME 60 * 10 * 1000
@@ -22,6 +23,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
+	StylePtr<Blue>(),	//Bluetooth
 	"cyan"}
 };
 
@@ -32,6 +34,7 @@ Preset chassis[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
 	StylePtr<InOutHelper<CYAN, 300, 800, Pulsing<YELLOW, BLACK, 800>>>(),	//Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
+	StylePtr<Blue>(),	//Bluetooth
    "cyan"}
 };
 
@@ -42,6 +45,7 @@ BladeConfig blades[] = {
 	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
+	SimpleBladePtr<CH3LED, NoLED, NoLED, NoLED, bladePowerPin6, -1, -1, -1>(),								//Bluetooth
 CONFIGARRAY(blade) },
 
  { NO_BLADE, 
@@ -50,6 +54,7 @@ CONFIGARRAY(blade) },
 	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
+	SimpleBladePtr<CH3LED, NoLED, NoLED, NoLED, bladePowerPin6, -1, -1, -1>(),								//Bluetooth
 CONFIGARRAY(chassis) }
 };
 #endif
