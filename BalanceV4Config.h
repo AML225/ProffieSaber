@@ -13,6 +13,12 @@ const unsigned int maxLedsPerStrip = 269;
 #define SHARED_POWER_PINS
 #define BLADE_DETECT_PIN 17 //Blade3Pin
 #define IDLE_OFF_TIME 60 * 10 * 1000
+#define COLOR_CHANGE_DIRECT
+#define DISABLE_DIAGNOSTIC_COMMANDS
+#endif
+
+#ifdef CONFIG_PROP
+#include "../props/saber_fett263_buttons.h"
 #endif
 
 #ifdef CONFIG_PRESETS
