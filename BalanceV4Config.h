@@ -31,7 +31,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
-	"LukeROTJ"}
+	"LukeROTJ"},
 	
   {	"LukeANH", "tracks/mars.wav",
 	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,DeepSkyBlue>,RotateColorsX<Variation,Rgb<0,0,128>>>,TransitionEffectL<TrConcat<TrInstant,BrownNoiseFlickerL<AlphaL<White,Int<16000>>,Int<50>>,TrSmoothFade<600>>,EFFECT_LOCKUP_END>,ResponsiveLockupL<Strobe<White,BrownNoiseFlicker<White,Red,300>,50,1>,TrConcat<TrInstant,White,TrFade<400>>,TrFade<100>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Scale<SwingSpeed<100>,Int<10000>,Int<14000>>>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red,TrWipeIn<600>,TrWipe<600>>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>,Int<400>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>,Black>>>(),
@@ -40,7 +40,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
-	"LukeANH"}
+	"LukeANH"},
 	
   {	"LukeESB", "tracks/mars.wav",
 	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Rgb<0,0,128>>>,TransitionEffectL<TrConcat<TrInstant,BrownNoiseFlickerL<AlphaL<White,Int<16000>>,Int<50>>,TrSmoothFade<600>>,EFFECT_LOCKUP_END>,ResponsiveLockupL<Strobe<White,BrownNoiseFlicker<White,Red,300>,50,1>,TrConcat<TrInstant,White,TrFade<400>>,TrFade<100>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Scale<SwingSpeed<100>,Int<10000>,Int<14000>>>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red,TrWipeIn<600>,TrWipe<600>>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>,Int<400>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>,Black>>>(),
@@ -49,7 +49,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
-	"LukeESB"}
+	"LukeESB"},
 	
   {	"Vader", "tracks/Imperial_March_Short.wav",
 	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,TransitionEffectL<TrConcat<TrInstant,BrownNoiseFlickerL<AlphaL<White,Int<16000>>,Int<50>>,TrSmoothFade<600>>,EFFECT_LOCKUP_END>,ResponsiveLockupL<Strobe<White,BrownNoiseFlicker<White,Blue,300>,50,1>,TrConcat<TrInstant,White,TrFade<400>>,TrFade<100>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Scale<SwingSpeed<100>,Int<10000>,Int<14000>>>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Orange,TrWipeIn<600>,TrWipe<600>>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>,Int<400>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Coral,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>,Black>>>(),
@@ -58,7 +58,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
-	"Vader"}
+	"Vader"},
 	
   {	"Kanan", "tracks/mars.wav",
  	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Rgb<0,0,128>>>,TransitionEffectL<TrConcat<TrInstant,BrownNoiseFlickerL<AlphaL<White,Int<16000>>,Int<50>>,TrSmoothFade<600>>,EFFECT_LOCKUP_END>,ResponsiveLockupL<Strobe<White,BrownNoiseFlicker<White,Red,300>,50,1>,TrConcat<TrInstant,White,TrFade<400>>,TrFade<100>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Scale<SwingSpeed<100>,Int<10000>,Int<14000>>>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red,TrWipeIn<600>,TrWipe<600>>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>,Int<400>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>,Black>>>(),
@@ -67,7 +67,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
-	"Kanan"}
+	"Kanan"},
 
   { "TeensySF", "tracks/venus.wav",
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
@@ -76,7 +76,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
-	"cyan"}
+	"cyan"},
   
   { "SmthJedi", "tracks/mars.wav",
     StylePtr<InOutSparkTip<EASYBLADE(BLUE, WHITE), 300, 800> >(),
