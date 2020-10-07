@@ -224,7 +224,7 @@ CONFIGARRAY(blade) },
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
 	SimpleBladePtr<CH3LED, NoLED, NoLED, NoLED, bladePowerPin6, -1, -1, -1>(),								//Bluetooth
-CONFIGARRAY(chassis) }
+CONFIGARRAY(blade) } ////////////////TEMPORARILY CHANGED TO BLADE
 };
 #endif
 
