@@ -196,16 +196,16 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	"Battery\nLevel"}
 };
 
-Preset chassis[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
-   { "TeensySF", "tracks/venus.wav",
-	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
-    StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//KR Pixel Stick
-	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb<0,128,0>>> ,InOutTrL<TrInstant,TrFade<300>,Pulsing<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb<0,10,0>>,3000>>>>(), //Crystal Chamber
-	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
-	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
-	StylePtr<Blue>(),	//Bluetooth
-   "cyan"}
-};
+//Preset chassis[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
+//   { "TeensySF", "tracks/venus.wav",
+//	StyleNormalPtr<CYAN, WHITE, 300, 800>(),				//SCW PCB NPXLs
+//    StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//KR Pixel Stick
+//	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb<0,128,0>>> ,InOutTrL<TrInstant,TrFade<300>,Pulsing<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb<0,10,0>>,3000>>>>(), //Crystal Chamber
+//	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
+//	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
+//	StylePtr<Blue>(),	//Bluetooth
+//	"cyan"}
+//};
 
 BladeConfig blades[] = {
  { 0, 
@@ -215,17 +215,17 @@ BladeConfig blades[] = {
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
 	SimpleBladePtr<CH3LED, NoLED, NoLED, NoLED, bladePowerPin6, -1, -1, -1>(),								//Bluetooth
-CONFIGARRAY(blade) },
+CONFIGARRAY(blade) }//,
 
- { NO_BLADE, 
-	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL		(n=5)
-    	SubBlade(5, 268, NULL),												//KR Pixel Stick	(n=264)
-	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
-	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
-	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
-	SimpleBladePtr<CH3LED, NoLED, NoLED, NoLED, bladePowerPin6, -1, -1, -1>(),								//Bluetooth
-CONFIGARRAY(blade) } ////////////////TEMPORARILY CHANGED TO BLADE
-};
+// { NO_BLADE, 
+//	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL		(n=5)
+//    	SubBlade(5, 268, NULL),												//KR Pixel Stick	(n=264)
+//	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
+//	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
+//	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
+//	SimpleBladePtr<CH3LED, NoLED, NoLED, NoLED, bladePowerPin6, -1, -1, -1>(),								//Bluetooth
+//CONFIGARRAY(chassis) }
+//};
 #endif
 
 #ifdef CONFIG_BUTTONS
