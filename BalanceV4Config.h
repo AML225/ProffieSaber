@@ -115,7 +115,7 @@ Preset blade[] = {								//When Emitter is Attached (Yes Blade, No CC)
 	"blue fire"},
   
   { "TthCrstl", "tracks/mars.wav",
-    StylePtr<InOutHelper<EASYBLADE(OnSpark<GREEN>, WHITE), 300, 800> 	//SCW PCB NPXLs
+    StylePtr<InOutHelper<EASYBLADE(OnSpark<GREEN>, WHITE), 300, 800> >(),	//SCW PCB NPXLs
     StylePtr<InOutHelper<EASYBLADE(OnSpark<GREEN>, WHITE), 300, 800> >(), //KR Pixel Stick
 	StyleNormalPtr<BLACK, BLACK, 300, 800>(),				//Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
