@@ -193,7 +193,7 @@ CONFIGARRAY(blade) },
  { NO_BLADE, 
 	SubBlade(0, 4, WS281XBladePtr<269, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()), 	//SCW PCB NPXL		(n=5)
     	SubBlade(5, 268, NULL),												//KR Pixel Stick	(n=264)
-	WS281XBladePtr<2, bladePin, Color8::GRB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
+	WS281XBladePtr<2, bladePin, Color8::RGB, PowerPINS<bladePowerPin1>>(),						//Crystal Chamber 	(n=2)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(), 			//Red Contol Box 	(n=1)
 	SimpleBladePtr<CreeXPE2WhiteTemplate<550>, NoLED, NoLED, NoLED, bladePowerPin5, -1, -1, -1>(), 			//Green Control Box LED	(n=1)
 	SimpleBladePtr<CH3LED, NoLED, NoLED, NoLED, bladePowerPin6, -1, -1, -1>(),								//Bluetooth
