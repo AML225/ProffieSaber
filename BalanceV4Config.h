@@ -175,7 +175,7 @@ Preset chassis[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
     StyleNormalPtr<BLACK, BLACK, 300, 800>(),	//KR Pixel Stick
 	StylePtr<InOutHelper<Cyan, 200, 500, InOutHelper<Cyan, 200, 500, BLACK>>>(), //Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
-	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
+	StylePtr<Black>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
 	"cyan"},
 	
@@ -184,7 +184,7 @@ Preset chassis[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
     StyleNormalPtr<BLACK, BLACK, 300, 800>(),	//KR Pixel Stick
 	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb<0,128,0>>> ,InOutTrL<TrInstant,TrFade<300>,Pulsing<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb<0,10,0>>,3000>>>>(), //Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
-	StylePtr<InOutHelper<WHITE, 300, 800, Pulsing<WHITE, BLACK, 800>>>(),	//Green Control Box LED
+	StylePtr<Black>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
 	"green"}
 	
