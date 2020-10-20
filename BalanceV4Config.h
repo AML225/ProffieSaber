@@ -173,7 +173,7 @@ Preset chassis[] = {								//When Emitter is NOT Attached (No Blade, Yes CC)
    { "TeensySF", "tracks/venus.wav",
 	StyleNormalPtr<CYAN, WHITE, 300, 800>(),	//SCW PCB NPXLs
     StyleNormalPtr<BLACK, BLACK, 300, 800>(),	//KR Pixel Stick
-	StylePtr<InOutHelper<Cyan, 200, 500, InOutHelper<Cyan, 200, 500, BLACK>>>(), //Crystal Chamber
+	StylePtr<InOutHelper<AudioFlicker<Cyan, DeepSkyBlue>, 200, 500, Pulsing<Cyan, Yellow, 2400>>(), //Crystal Chamber
 	StylePtr<InOutHelper<Pulsing<WHITE, BLACK, 800>, 300, 800, WHITE>>(),	//Red Control Box LED
 	StylePtr<Black>(),	//Green Control Box LED
 	StylePtr<Blue>(),	//Bluetooth
